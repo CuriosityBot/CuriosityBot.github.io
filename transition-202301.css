@@ -1,0 +1,207 @@
+:root {
+
+    --mcpl-accent-green-old: #1CAA83; /* Old */
+    --mcpl-accent-orange-old: #F26834; /* Old */
+    --mcpl-accent-purple-old: #703B97; /* Old */
+    --mcpl-accent-yellow-old: #F2CD37; /* Old */
+    --mcpl-accent-blue-old: #0068B3; /* Old */
+    
+    --mcpl-white: #fff; /* KEEP */
+  
+    --mcpl-blue-1: #005999; /* KEEP */
+  
+    --mcpl-green-7: #156133;
+    --mcpl-red-7: #971c27;
+    --mcpl-gray-1: #f2f2f2;
+    --mcpl-gray-6: #373737;
+  
+  /* ---------------------------- */
+  /* set up named color variables */
+  /* ---------------------------- */
+  --mcpl-primary: var(--mcpl-blue-1); /* KEEP */
+  --mcpl-success: var(--mcpl-green-7); /* VERIFY */
+  --mcpl-danger: var(--mcpl-red-7); /* VERIFY */
+  --mcpl-dark: var(--mcpl-gray-6); /* VERIFY */
+  --mcpl-core-gray: var(--mcpl-gray-1); /* VERIFY */
+  --mcpl-text-body: var(--mcpl-gray-6); /* VERIFY */
+  --mcpl-text-link: var(--mcpl-blue-1); /* VERIFY */
+  --mcpl-error-red: #c9302c; /* VERIFY */
+  }    
+    
+    
+    .content {
+        margin-bottom: 20px;
+    }
+
+    .content p, .content li {
+        font-size: 1.75rem;
+        line-height: 1.5;
+        color: black;
+        max-width: 40em;
+    }
+
+    .h1, .h2 {
+        font-weight: 700;
+        color: #0068B3;
+    }
+
+    p>a {
+        text-decoration: underline;
+        font-weight: normal;
+        color: #1d70b8;
+    }
+
+    /* visited link */
+
+    p>a:visited {
+        color: #4c2c92;
+    }
+
+    /* mouse over link */
+
+    p>a:hover {
+        color: #003078;
+    }
+
+    /* selected link */
+
+    p>a:active {
+        color: #0b0c0c;
+    }
+
+    /*focus state*/
+
+    p>a:focus {
+        background-color: #ffdd00;
+    }
+
+    /*----- Alert Royal -----*/
+
+    .alert-royal {
+        background-color: #0068B3;
+        border: none;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: baseline;
+        /*margin-bottom: 15px;*/
+    }
+
+    .alert-royal.alert {
+        padding: 3px;
+    }
+
+    section.alert-royal a {
+        font-size: .9em;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        font-weight: 800;
+    }
+
+    section.alert-royal a:focus {
+        background-color: #0068B3;
+    }
+
+    section.alert-royal a:hover {
+        text-decoration: underline;
+    }
+
+    /*----- Step-by-step numbered instructions -----*/
+
+    .step-number {
+        display: flex;
+        align-items: center;
+    }
+
+    .step-number__number {
+        width: 50px;
+        height: 50px;
+    }
+
+    .step-number__number--detail {
+        font-size: 2em;
+        font-weight: bold;
+        background: #555;
+        color: #fff;
+        padding: 10px 17px;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+    }
+
+    .step-number__title {
+        padding-left: 10px;
+    }
+
+    .step-number__title h3 {
+        /* margin: 0; */
+        font-weight: 400;
+    }
+
+    .step-content {
+        margin-left: 25px;
+        border-left: 1px dashed #666;
+        padding: 10px 0 10px 35px;
+    }
+
+    .step-content h4 {
+        margin-top: 0;
+    }
+
+    /*----- pageOutline -----*/
+
+    .pageOutlineBox h2 {
+        font-size: 16px;
+        line-height: 1.5;
+        color: black;
+        font-weight: 600;
+        padding-left: 10px;
+        margin-bottom: 0px;
+        padding-top: 10px;
+    }
+
+    .pageOutlineHeading h2 {
+        margin-top: 30px;
+    }
+
+    .pageOutline ul {
+        list-style: none;
+        margin: 0px;
+        /*list-style-position: outside;*/
+        padding-inline-start: 0px;
+        color: black;
+        line-height: 1.8;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+
+    .pageOutline li {
+        padding-left: 5px;
+    }
+
+    .pageOutline a {
+        padding-left: 5px;
+        font-size: 14px;
+        color: #3b3a3e;
+        text-decoration: underline;
+        font-weight: 600;
+    }
+
+    .list__list-item--dashed {
+        position: relative;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .list__list-item--dashed:before {
+        content: "—";
+        /*position: absolute;    left: 0;    width: 20px;    overflow: hidden;*/
+    }
+
+    .pageOutlineBox {
+        background-color: #f2cd373b;
+    }
